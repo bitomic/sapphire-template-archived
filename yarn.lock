@@ -1659,7 +1659,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.5.0":
+"eslint@npm:^8.6.0":
   version: 8.6.0
   resolution: "eslint@npm:8.6.0"
   dependencies:
@@ -3836,7 +3836,7 @@ __metadata:
     discord-api-types: ^0.26.0
     discord.js: ^13.5.0
     dotenv: ^10.0.0
-    eslint: ^8.5.0
+    eslint: ^8.6.0
     husky: ^7.0.4
     lint-staged: ^12.1.4
     node-cron: ^3.0.0
