@@ -23,7 +23,7 @@
     "discord.js": "^13.5.1",
     "dotenv": "^10.0.0",
     "node-cron": "^3.0.0",
-    "sequelize": "^6.12.5",
+    "sequelize": "^6.13.0",
     "sqlite3": "^5.0.2"
   },
   "devDependencies": {
