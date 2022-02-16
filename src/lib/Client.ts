@@ -3,7 +3,6 @@ import { env } from './environment'
 import { Intents } from 'discord.js'
 import type { Sequelize } from 'sequelize'
 import { sequelize } from './Sequelize'
-import { SlashCommandStore } from '../framework'
 
 export class Client extends SapphireClient {
 	public constructor() {
@@ -16,7 +15,6 @@ export class Client extends SapphireClient {
 			loadDefaultErrorListeners: true
 		} )
 		container.sequelize = sequelize
-		this.stores.register( new SlashCommandStore() )
 	}
 
 	public async start(): Promise<void> {

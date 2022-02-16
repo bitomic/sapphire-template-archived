@@ -1,3 +1,4 @@
+/*
 import { ApplyOptions } from '@sapphire/decorators'
 import type { CommandInteraction } from 'discord.js'
 import { SlashCommand } from '../framework'
@@ -16,3 +17,4 @@ export class UserSlash extends SlashCommand {
 		} )
 	}
 }
+*/
