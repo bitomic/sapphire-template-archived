@@ -1,3 +1,4 @@
+import '../database'
 import type { FullUserCommandOptions, SlashCommandOptions } from '../framework'
 import type { Guild, GuildApplicationCommandPermissionData } from 'discord.js'
 import { ApplyOptions } from '@sapphire/decorators'
@@ -15,6 +16,7 @@ export class UserEvent extends Listener {
 	public async run(): Promise<void> {
 		this.container.logger.info( 'Ready!' )
 
+		await this.container.sequelize.sync()
 		await this.loadApplicationCommands()
 		await this.loadTasks()
 	}
