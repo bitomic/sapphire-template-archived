@@ -1,15 +1,12 @@
-import { container, RegisterBehavior, SapphireClient } from '@sapphire/framework'
+import { container, SapphireClient } from '@sapphire/framework'
+import { ChatInputCommandsData } from '../framework'
 import { env } from './environment'
 import { Intents } from 'discord.js'
 import type { Sequelize } from 'sequelize'
 import { sequelize } from './Sequelize'
 
 export class UserClient extends SapphireClient {
-	public override readonly chatInputCommandSettings = {
-		behaviorWhenNotIdentical: RegisterBehavior.LogToConsole,
-		guildIds: env.NODE_ENV === 'development' ? [ '883916646593490944' ] : [],
-		register: true
-	} as const
+	public override readonly chatInputCommandsData: ChatInputCommandsData
 
 	public constructor() {
 		super( {
@@ -21,6 +18,7 @@ export class UserClient extends SapphireClient {
 			loadDefaultErrorListeners: true
 		} )
 		container.sequelize = sequelize
+		this.chatInputCommandsData = new ChatInputCommandsData()
 	}
 
 	public async start(): Promise<void> {
@@ -36,6 +34,6 @@ declare module '@sapphire/pieces' {
 
 declare module 'discord.js' {
 	interface Client {
-		chatInputCommandSettings: UserClient[ 'chatInputCommandSettings' ]
+		chatInputCommandsData: UserClient[ 'chatInputCommandsData' ]
 	}
 }

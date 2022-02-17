@@ -6,7 +6,7 @@ import { Command } from '@sapphire/framework'
 @ApplyOptions<CommandOptions>( {
 	description: 'Pooong!',
 	enabled: true,
-	name: 'ping'
+	name: 'test355'
 } )
 export class UserCommand extends Command {
 	public override registerApplicationCommands( registry: ApplicationCommandRegistry ): void {
@@ -15,10 +15,7 @@ export class UserCommand extends Command {
 				description: this.description,
 				name: this.name
 			},
-			{
-				...this.container.client.chatInputCommandSettings,
-				idHints: [ '943651583743377448' ]
-			}
+			this.container.client.chatInputCommandsData.get( this.name )
 		)
 	}
 
