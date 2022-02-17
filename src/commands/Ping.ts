@@ -4,9 +4,9 @@ import { ApplyOptions } from '@sapphire/decorators'
 import { Command } from '@sapphire/framework'
 
 @ApplyOptions<CommandOptions>( {
-	description: 'Pooong!',
+	description: 'Pong!',
 	enabled: true,
-	name: 'test355'
+	name: 'ping'
 } )
 export class UserCommand extends Command {
 	public override registerApplicationCommands( registry: ApplicationCommandRegistry ): void {
