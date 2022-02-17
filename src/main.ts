@@ -1,9 +1,9 @@
 import '@sapphire/plugin-logger/register'
-import { Client, env } from './lib'
+import { env, UserClient } from './lib'
 import { container } from '@sapphire/framework'
 
 ( async () => {
-	const client = new Client()
+	const client = new UserClient()
 	try {
 		await client.login( env.DISCORD_TOKEN )
 	} catch ( e ) {
