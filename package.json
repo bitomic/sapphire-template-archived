@@ -24,7 +24,7 @@
     "dotenv": "^16.0.0",
     "fs-extra": "^10.0.0",
     "node-cron": "^3.0.0",
-    "sequelize": "^6.16.1",
+    "sequelize": "^6.16.2",
     "sqlite3": "^5.0.2"
   },
   "devDependencies": {
