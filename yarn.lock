@@ -433,15 +433,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/discord.js-utilities@npm:^4.6.0":
-  version: 4.8.1
-  resolution: "@sapphire/discord.js-utilities@npm:4.8.1"
+"@sapphire/discord.js-utilities@npm:^4.7.0":
+  version: 4.8.0
+  resolution: "@sapphire/discord.js-utilities@npm:4.8.0"
   dependencies:
     "@sapphire/discord-utilities": ^2.8.0
     "@sapphire/time-utilities": ^1.6.0
     "@sapphire/utilities": ^3.3.0
     tslib: ^2.3.1
-  checksum: 46fd5aeef632b34b48483c1db9b8439de507fdd0dc5460ba78478c46c59176108a348b14ff123f26371fbe286667cb60040daadf324c3cdf18779ec2004a263f
+  checksum: 28e98d9e451850b147ef355e876a1e9c9aee653b8dcd5a988619d5a26b3906372a11a81e1aa14a7fbcf56891206c603b037b62cc40e24268c6c3f82e4729f38d
   languageName: node
   linkType: hard
 
@@ -460,19 +460,37 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/framework@npm:3.0.0-next.fd7be0b.0":
-  version: 3.0.0-next.fd7be0b.0
-  resolution: "@sapphire/framework@npm:3.0.0-next.fd7be0b.0"
+"@sapphire/framework@npm:3.0.0-next.1d89b7f.0":
+  version: 3.0.0-next.1d89b7f.0
+  resolution: "@sapphire/framework@npm:3.0.0-next.1d89b7f.0"
   dependencies:
     "@sapphire/discord-utilities": ^2.7.0
-    "@sapphire/discord.js-utilities": ^4.6.0
+    "@sapphire/discord.js-utilities": ^4.7.0
     "@sapphire/pieces": ^3.2.0
     "@sapphire/ratelimits": ^2.3.0
+    "@sapphire/result": ^1.0.0
     "@sapphire/stopwatch": ^1.3.0
     "@sapphire/utilities": ^3.3.0
     lexure: ^0.17.0
     tslib: ^2.3.1
-  checksum: 7b5ad79fdc793bac410bc88ce425cb226b31ed5d10d7762afe7c2298d759c1dc8773b23ca69385e7d9ffc7f666fd534eb000a0e142857418cdcb1408b0fac3f9
+  checksum: b6b32ad5e796fea3829be495dadc20cb97b8a631053afc2451c4dbb49d14807dc759fb7823b02a7f74fbf6f533d2d4c9396db604628ece2a559db54e39e50983
+  languageName: node
+  linkType: hard
+
+"@sapphire/framework@patch:@sapphire/framework@npm:3.0.0-next.1d89b7f.0#.yarn/patches/@sapphire-framework-npm-3.0.0-next.1d89b7f.0-1dc3096681::locator=sapphire-template%40workspace%3A.":
+  version: 3.0.0-next.1d89b7f.0
+  resolution: "@sapphire/framework@patch:@sapphire/framework@npm%3A3.0.0-next.1d89b7f.0#.yarn/patches/@sapphire-framework-npm-3.0.0-next.1d89b7f.0-1dc3096681::version=3.0.0-next.1d89b7f.0&hash=d16aa2&locator=sapphire-template%40workspace%3A."
+  dependencies:
+    "@sapphire/discord-utilities": ^2.7.0
+    "@sapphire/discord.js-utilities": ^4.7.0
+    "@sapphire/pieces": ^3.2.0
+    "@sapphire/ratelimits": ^2.3.0
+    "@sapphire/result": ^1.0.0
+    "@sapphire/stopwatch": ^1.3.0
+    "@sapphire/utilities": ^3.3.0
+    lexure: ^0.17.0
+    tslib: ^2.3.1
+  checksum: 1d30df47e53849c7bcf64fdf28d2e05179defbb26b46f16b7676bf23d87548ab371b80a01cc184f050f3ddd4a09e829eabafbea9334a71f6b253d8ac21f6685b
   languageName: node
   linkType: hard
 
@@ -513,6 +531,13 @@ __metadata:
   dependencies:
     "@sapphire/time-utilities": ^1.6.0
   checksum: e69d1acfb1b35dba07179e3b26c7879e16478e78aefe4c8f2694871d5387742be2e4835907ddfbcecf99f70729dadbebb17b804b4671f8fab74be08c476e3638
+  languageName: node
+  linkType: hard
+
+"@sapphire/result@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@sapphire/result@npm:1.0.0"
+  checksum: d72296438975620309da4248ac67a1e863c706bb1e05755709ba02b4c37ec19c968bdb2ab40ed9c15baeb7a082d1b72936a0d736fe1e18bdc7fce9302bb06207
   languageName: node
   linkType: hard
 
@@ -3949,7 +3974,7 @@ __metadata:
     "@commitlint/config-conventional": ^16.2.1
     "@discordjs/rest": ^0.3.0
     "@sapphire/decorators": ^4.2.5
-    "@sapphire/framework": 3.0.0-next.fd7be0b.0
+    "@sapphire/framework": 3.0.0-next.1d89b7f.0
     "@sapphire/pieces": ^3.2.0
     "@sapphire/plugin-logger": ^2.1.3
     "@sapphire/utilities": ^3.3.0
