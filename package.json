@@ -42,7 +42,7 @@
     "rimraf": "^3.0.2",
     "typescript": "^4.5.5"
   },
-  "packageManager": "yarn@3.1.1",
+  "packageManager": "yarn@3.2.0",
   "resolutions": {
     "@sapphire/framework@3.0.0-next.1d89b7f.0": "patch:@sapphire/framework@npm:3.0.0-next.1d89b7f.0#.yarn/patches/@sapphire-framework-npm-3.0.0-next.1d89b7f.0-1dc3096681"
   }
