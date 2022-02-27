@@ -1,6 +1,7 @@
 import { container, SapphireClient } from '@sapphire/framework'
 import { env } from './environment'
 import { Intents } from 'discord.js'
+import { ModelStore } from '../framework'
 import type { Sequelize } from 'sequelize'
 import { sequelize } from './Sequelize'
 
@@ -15,6 +16,7 @@ export class UserClient extends SapphireClient {
 			loadDefaultErrorListeners: true
 		} )
 		container.sequelize = sequelize
+		container.stores.register( new ModelStore() )
 	}
 
 	public async start(): Promise<void> {
