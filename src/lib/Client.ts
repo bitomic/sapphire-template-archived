@@ -7,7 +7,7 @@ import { sequelize } from './Sequelize'
 export class UserClient extends SapphireClient {
 	public constructor() {
 		super( {
-			defaultPrefix: env.DISCORD_PREFIX,
+			defaultPrefix: env.DISCORD_PREFIX ?? '!',
 			intents: [
 				Intents.FLAGS.GUILDS,
 				Intents.FLAGS.GUILD_MESSAGES
