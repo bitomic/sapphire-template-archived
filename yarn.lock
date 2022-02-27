@@ -39,16 +39,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bitomic/plugin-application-commands@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@bitomic/plugin-application-commands@npm:1.0.1"
+"@bitomic/plugin-application-commands@npm:1.1.0":
+  version: 1.1.0
+  resolution: "@bitomic/plugin-application-commands@npm:1.1.0"
   dependencies:
     "@sapphire/decorators": 4.2.5
     "@sapphire/pieces": 3.2.0
   peerDependencies:
     "@sapphire/framework": "*"
     discord.js: "*"
-  checksum: 388177bb4b5945762dc43e242930542e994efff6eac3d89968464522ee052feafa681c55101466fc7fcf21d73538dbcc84cbf134a6948be8b841c46bd6467111
+  checksum: 730b2fd63a93a9463adb55b3697292a9f7bdc7dff6ac46109c0075dd2749913ba5caac3cb41cc5999658c849cd78584de7d933358344051c5a4c9c4b48c3f1fd
   languageName: node
   linkType: hard
 
@@ -3959,7 +3959,7 @@ __metadata:
   resolution: "sapphire-template@workspace:."
   dependencies:
     "@bitomic/eslint-config": ^1.0.0
-    "@bitomic/plugin-application-commands": ^1.0.1
+    "@bitomic/plugin-application-commands": 1.1.0
     "@commitlint/cli": ^16.2.1
     "@commitlint/config-conventional": ^16.2.1
     "@discordjs/rest": ^0.3.0
