@@ -22,11 +22,11 @@
     "@sapphire/utilities": "^3.3.0",
     "discord-api-types": "^0.27.3",
     "discord.js": "^13.6.0",
-    "dotenv": "^16.0.0",
     "fs-extra": "^10.0.1",
     "node-cron": "^3.0.0",
     "sequelize": "^6.17.0",
-    "sqlite3": "^5.0.2"
+    "sqlite3": "^5.0.2",
+    "ts-dotenv": "^0.8.3"
   },
   "devDependencies": {
     "@bitomic/eslint-config": "^1.0.0",
