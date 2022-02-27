@@ -1,7 +1,7 @@
 import type { CommandInteraction, Message } from 'discord.js'
 import { ApplyOptions } from '@sapphire/decorators'
-import type { CommandOptions } from '@sapphire/framework'
 import { Command } from '@sapphire/framework'
+import type { CommandOptions } from '@sapphire/framework'
 
 @ApplyOptions<CommandOptions>( {
 	chatInputApplicationOptions: {
