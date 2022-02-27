@@ -4,10 +4,8 @@ import { Command } from '@sapphire/framework'
 import type { CommandOptions } from '@sapphire/framework'
 
 @ApplyOptions<CommandOptions>( {
-	chatInputApplicationOptions: {
-		description: 'Pong!',
-		name: 'ping'
-	},
+	chatInputApplicationOptions: {},
+	description: 'Pong!',
 	enabled: true,
 	name: 'ping'
 } )
