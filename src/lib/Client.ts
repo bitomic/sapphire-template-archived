@@ -8,11 +8,9 @@ import { sequelize } from './Sequelize'
 export class UserClient extends SapphireClient {
 	public constructor() {
 		super( {
-			applicationCommandsHintProvider: () => {
-				return env.DISCORD_DEVELOPMENT_SERVER
-					? { guildIds: [ env.DISCORD_DEVELOPMENT_SERVER ] }
-					: null
-			},
+			applicationCommandsHintProvider: () => env.DISCORD_DEVELOPMENT_SERVER
+				? { guildIds: [ env.DISCORD_DEVELOPMENT_SERVER ] }
+				: null,
 			defaultPrefix: env.DISCORD_PREFIX ?? '!',
 			intents: [
 				Intents.FLAGS.GUILDS,
