@@ -576,10 +576,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/utilities@npm:^3.6.0":
-  version: 3.6.0
-  resolution: "@sapphire/utilities@npm:3.6.0"
-  checksum: bb46f3590f8e609ca1aa492d2347a99fe79e75768a6592f47b4915dcdc93e0d933026d3ad4e872d75d84ba45a3afe27c940149f11931b299e8dc228b5f7e87ab
+"@sapphire/utilities@npm:^3.6.1":
+  version: 3.6.1
+  resolution: "@sapphire/utilities@npm:3.6.1"
+  checksum: 0a1479c7cb3f10455906d91a43e9457aec97155f5821d00d572920c0ee25e7842310e8af3ed0e2c967b8adc256016f38b4c3bf8f17843613bcb6754dbe5d9599
   languageName: node
   linkType: hard
 
@@ -3970,7 +3970,7 @@ __metadata:
     "@sapphire/framework": 2.4.1
     "@sapphire/pieces": ^3.2.0
     "@sapphire/plugin-logger": ^2.2.0
-    "@sapphire/utilities": ^3.6.0
+    "@sapphire/utilities": ^3.6.1
     "@types/fs-extra": ^9.0.13
     "@types/node": ^16.11.26
     "@types/node-cron": ^3.0.1
