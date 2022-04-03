@@ -24,7 +24,7 @@
     "discord.js": "^13.6.0",
     "fs-extra": "^10.0.1",
     "node-cron": "^3.0.0",
-    "sequelize": "^6.17.0",
+    "sequelize": "^6.18.0",
     "sqlite3": "^5.0.2",
     "ts-dotenv": "^0.8.3"
   },
