@@ -588,17 +588,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/plugin-logger@npm:^2.2.1":
-  version: 2.2.1
-  resolution: "@sapphire/plugin-logger@npm:2.2.1"
-  dependencies:
-    "@sapphire/time-utilities": ^1.7.3
-    colorette: ^2.0.16
-    tslib: ^2.3.1
-  checksum: 7c5e72a8fa762dfce35cc76d1265f678e0fbd4b899853a2fd80b7b4191192636c5de2bea74d16e980a3a3a19d82df7875934b6d0c4b20621d07f4c0534979fbb
-  languageName: node
-  linkType: hard
-
 "@sapphire/ratelimits@npm:^2.1.10":
   version: 2.1.11
   resolution: "@sapphire/ratelimits@npm:2.1.11"
@@ -656,7 +645,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/time-utilities@npm:^1.7.3, @sapphire/time-utilities@npm:^1.7.4":
+"@sapphire/time-utilities@npm:^1.7.4":
   version: 1.7.4
   resolution: "@sapphire/time-utilities@npm:1.7.4"
   dependencies:
@@ -3627,7 +3616,6 @@ __metadata:
     "@sapphire/decorators": ^4.3.6
     "@sapphire/framework": 3.0.0-next.c6c1eee.0
     "@sapphire/pieces": ^3.3.4
-    "@sapphire/plugin-logger": ^2.2.1
     "@sapphire/utilities": ^3.6.2
     "@types/fs-extra": ^9.0.13
     "@types/node": ^16.11.41
