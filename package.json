@@ -23,6 +23,8 @@
     "fs-extra": "^10.1.0",
     "mysql2": "^2.3.3",
     "node-cron": "^3.0.1",
+    "pino": "^8.1.0",
+    "pino-pretty": "^8.1.0",
     "sequelize": "^6.21.0",
     "ts-dotenv": "^0.8.3"
   },
