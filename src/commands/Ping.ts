@@ -1,7 +1,7 @@
+import type { ApplicationCommandRegistry, CommandOptions } from '@sapphire/framework'
 import type { CommandInteraction, Message } from 'discord.js'
 import { ApplyOptions } from '@sapphire/decorators'
 import { Command } from '@sapphire/framework'
-import type { CommandOptions } from '@sapphire/framework'
 
 @ApplyOptions<CommandOptions>( {
 	description: 'Pong!',
@@ -9,6 +9,16 @@ import type { CommandOptions } from '@sapphire/framework'
 	name: 'ping'
 } )
 export class UserCommand extends Command {
+	public override async registerApplicationCommands( registry: ApplicationCommandRegistry ): Promise<void> {
+		registry.registerChatInputCommand(
+			builder => builder
+				.setName( this.name )
+				.setDescription( this.description ),
+			await this.container.stores.get( 'models' ).get( 'commands' )
+				.getData( this.name )
+		)
+	}
+
 	public override chatInputRun( interaction: CommandInteraction ): void {
 		void interaction.reply( 'Pong!' )
 	}
