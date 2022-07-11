@@ -3365,7 +3365,7 @@ __metadata:
     pino: ^8.1.0
     pino-pretty: ^8.1.0
     rimraf: ^3.0.2
-    sequelize: ^6.21.0
+    sequelize: ^6.21.2
     ts-dotenv: ^0.8.3
     typescript: ^4.7.4
   languageName: unknown
@@ -3423,9 +3423,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sequelize@npm:^6.21.0":
-  version: 6.21.0
-  resolution: "sequelize@npm:6.21.0"
+"sequelize@npm:^6.21.2":
+  version: 6.21.2
+  resolution: "sequelize@npm:6.21.2"
   dependencies:
     "@types/debug": ^4.1.7
     "@types/validator": ^13.7.1
@@ -3460,7 +3460,7 @@ __metadata:
       optional: true
     tedious:
       optional: true
-  checksum: b863771d59343b57bfbdf4ab86cbc724719f4350f3053da0ed4942987e8a3c9bf8c18b7ebc9361be9216455988790bee501264ee0cba8b4caf28a8727a66459d
+  checksum: 5486ec15e80cf51e49d819c2495a05a17b5a0102866ca0af054dbc4a625d2dc6200e36189261e50234625fcf4da5cbc973eb9900591a5b9e9f63c67955196f56
   languageName: node
   linkType: hard
 
