@@ -8,7 +8,7 @@ import type { ListenerOptions } from '@sapphire/framework'
 } )
 export class UserEvent extends Listener {
 	public async run(): Promise<void> {
-		this.container.logger.info( 'Ready!' )
+		this.container.logger.info( `Ready! as ${ this.container.client.user?.tag ?? 'unknown user' }` )
 
 		await this.container.sequelize.sync()
 	}
