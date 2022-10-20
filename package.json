@@ -23,7 +23,7 @@
     "discord.js": "^13.8.1",
     "fs-extra": "^10.1.0",
     "mysql2": "^2.3.3",
-    "pino": "^8.4.2",
+    "pino": "^8.7.0",
     "pino-pretty": "^9.1.0",
     "sequelize": "^6.21.4",
     "ts-dotenv": "^0.8.3"
